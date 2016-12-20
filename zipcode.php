@@ -2,12 +2,13 @@
 require_once('connection.php');
 header('Content-Type: application/json');
 
-$result = pg_query($connect,"select borough, count(borough) from bikecrashnyc group by borough;");
+$result = pg_query($connect,"select distinct zipcode, count(zipcode)as cnt from bikecrashnyc group by zipcode;");
 if (!$result){
     echo '{"error":"no results"}';
 }
 
-
+$zipCodes= array();
+$crashCounts= array();
  $data = array();
   
 

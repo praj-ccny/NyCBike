@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+ <title>Nyc Bike Ride Safe</title>
+    
+   
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!--other css -->
+	<link href="css/mycss.css" rel="stylesheet">
+
+ 
+    <link rel="stylesheet" href="css/alertify.min.css">
+    <link rel="stylesheet" href="css/default.min.css">
+    <script src="js/alertify.min.js"></script>
+   
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+   
+	
+	<script src="js/markerclusterer.js"></script>
+	<style>
+
+	.axis {
+	  font: 10px sans-serif;
+	}
+
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}
+
+	</style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+       <div class="container">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 <a class="navbar-brand" href="./safe.html">NYC Bike Safe Ride</a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>                      
+						
+                        <a href="datechart.html"><i class="fa fa-fw fa-bar-chart-o"></i> Statistics</a>
+                    
+                    </li>
+                    <li> 
+                        <a href="https://www.citibikenyc.com/how-it-works/rules-of-the-road"> <i class="fa fa-fw fa-list-ol"></i>Guidelines</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
+       
+       
+    </nav>	
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+ <div class="container"><h2>Charts </h2></div>
+<div id="exTab3" class="container">	
+<ul  class="nav nav-pills">
+			<li class="active">
+            <a  href="datechart.html" data-toggle="tab">Year</a>
+			</li>
+			<li><a href="./boroughchart.html" data-toggle="tab">By Borough</a>
+			</li>
+			<li><a href="./zipcodetry.html" data-toggle="tab">Zip Code</a>
+			</li>
+  		
+		</ul>
+
+			<div class="tab-content clearfix">
+			  <div class="tab-pane active" id="1b">
+          <h3>As per observation, you have to be more careful during Summer</h3>
+				</div>
+				<div class="tab-pane" id="2b">
+          <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+				</div>
+        <div class="tab-pane" id="3b">
+          <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+				</div>
+          <div class="tab-pane" id="4b">
+          <h3>We use css to change the background color of the content to be equal to the tab</h3>
+				</div>
+			</div>
+  </div>
+
+<script src="js/datechart.js"></script>
+
+</body>

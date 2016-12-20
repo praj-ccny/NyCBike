@@ -1,0 +1,23 @@
+/*.lighter{background-color:#e58ee2 !important;}*/
+
+.btn:hover { outline: 0 !important;}
+ html,
+ body
+ {
+   margin: 20 0 0 0;
+   padding: 0;
+   height: 100%;	
+   position:relative;
+ }
+#map-canvas
+ {
+	  height: 80% !important;
+      width: 100%;	  
+      overflow: scroll;	  
+ }
+#right-panel{
+ margin: 20 0 0 0;
+ height: 100%;
+ overflow: scroll;
+  position:fixed;
+}
