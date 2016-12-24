@@ -1,10 +1,10 @@
 <?php
-$host        = "host=127.0.0.1";
-$port        = "port=5435";
-$dbname      = "dbname=postgres";
-$credentials = "user=postgres password=postgres";
+$host        = "host=134.74.112.18";
+$port        = "port=5432";
+$dbname      = "dbname=d106";
+$credentials = "user=davi16 password=curt";
 
-$connect= pg_connect( "$host $port $dbname $credentials"  ) or die ("Could not connect: " . pg_last_error());
+$connect= pg_connect( "$host $port $dbname $credentials"  );
 if(!$connect){
   echo "Error : Unable to open database\n";
 }
