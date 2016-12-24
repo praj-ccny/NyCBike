@@ -111,7 +111,7 @@
               streetName +
               '</b><div id="bodyContent">' +
               '<button id="startbtn" onclick="myStartFunction()" class="btn btn-primary">Set Start</button> ' +
-              '<button id="destbtn" onclick="myDestFunction()" class="btn btn-success">Destination</button>' +
+              '<button id="destbtn" onclick="myDestFunction()" class="btn btn-warning">Destination</button>' +
               '<button onclick="calculateAndDisplayRoute()" class="btn btn-success">Go</button>' +
               '</div>';
 
